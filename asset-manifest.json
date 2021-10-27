@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cheryls-favorite-recipes-app/static/css/main.817f31cb.chunk.css",
+    "main.js": "/cheryls-favorite-recipes-app/static/js/main.301e1fc7.chunk.js",
+    "main.js.map": "/cheryls-favorite-recipes-app/static/js/main.301e1fc7.chunk.js.map",
+    "runtime-main.js": "/cheryls-favorite-recipes-app/static/js/runtime-main.227ac50a.js",
+    "runtime-main.js.map": "/cheryls-favorite-recipes-app/static/js/runtime-main.227ac50a.js.map",
+    "static/js/2.f6cd39fb.chunk.js": "/cheryls-favorite-recipes-app/static/js/2.f6cd39fb.chunk.js",
+    "static/js/2.f6cd39fb.chunk.js.map": "/cheryls-favorite-recipes-app/static/js/2.f6cd39fb.chunk.js.map",
+    "static/js/3.7b67c039.chunk.js": "/cheryls-favorite-recipes-app/static/js/3.7b67c039.chunk.js",
+    "static/js/3.7b67c039.chunk.js.map": "/cheryls-favorite-recipes-app/static/js/3.7b67c039.chunk.js.map",
+    "index.html": "/cheryls-favorite-recipes-app/index.html",
+    "static/css/main.817f31cb.chunk.css.map": "/cheryls-favorite-recipes-app/static/css/main.817f31cb.chunk.css.map",
+    "static/js/2.f6cd39fb.chunk.js.LICENSE.txt": "/cheryls-favorite-recipes-app/static/js/2.f6cd39fb.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/cheryls-favorite-recipes-app/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.227ac50a.js",
+    "static/js/2.f6cd39fb.chunk.js",
+    "static/css/main.817f31cb.chunk.css",
+    "static/js/main.301e1fc7.chunk.js"
+  ]
+}
