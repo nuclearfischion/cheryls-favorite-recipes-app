@@ -1,0 +1,20 @@
+.navbar {
+    display: flex;
+    background: #fff;
+    box-shadow: 3px 3px 7px 0px rgb(99 99 99 / 24%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 1rem 4rem;
+    text-transform: uppercase;
+    font-size: .625rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+.navbar a {
+    color: inherit;
+    text-decoration: none;
+    padding-right: 6em;
+}

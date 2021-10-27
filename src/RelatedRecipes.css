@@ -1,0 +1,24 @@
+.relatedRecipes {
+
+}
+.relatedRecipes .recipeCard img {
+    min-height: 60px;
+}
+.relatedRecipesBody {
+    display: flex;
+    flex-wrap: wrap;
+}
+.relatedRecipes .recipeCard h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+.relatedRecipes button {
+    display: none;
+}
+.relatedRecipes ul, .relatedRecipes ol {
+    display: none;
+}
+.relatedRecipesBody .recipeCard {
+    flex: 1 1 calc(100% / 4);
+    margin-top: 0;
+}

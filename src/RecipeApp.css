@@ -1,0 +1,106 @@
+/* theme colors */
+:root{
+    --bg-light: #fff;
+    --body-light: #161616;
+
+    --text-light: #3A404B;
+}
+
+/* base styles */
+
+body {
+    background-image: linear-gradient(45deg, #EEF0F2, transparent);    
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: var(--text-light);
+}
+
+h1 {
+    margin-bottom: 0;
+    /* text-align: left; */
+}
+
+.App {
+    /* background-color: #f0efed; */
+  text-align: center;
+  padding: 4rem 10rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+    font-size: calc(10px + 2vmin);
+  height: calc(100vh - 8rem);
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  color: var(--body-light);
+  margin-bottom: 4rem;
+}
+.App-header div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.App-header div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.App-header div:nth-child(2) {
+    padding: 2rem;
+}
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.darkmode {
+    background-image: linear-gradient(45deg, #555D73, #141B2B);
+}
+
+.darkmode * {
+    color: rgb(222,227,228) !important;
+}
+
+.darkmode .navbar {
+    background-image: linear-gradient(45deg, #202124, #171717);
+    box-shadow: 3px 3px 7px 0px rgb(0 0 0 / 24%);
+}
+
+.darkmode .recipeCard {
+    background: rgba(255,255,255,.03) !important;
+}
+
+.darkmode .recipeCard .recipeNav button {
+    color: #A2A8BD !important;
+    border-bottom-color: #A2A8BD;
+    opacity: .2;
+}
+.darkmode .recipeCard .recipeNav button:focus {
+    color: rgb(252 192 133 / .8) !important;
+    border-bottom-color: rgb(252 192 133 / .8) !important;
+    opacity: 1;
+}
