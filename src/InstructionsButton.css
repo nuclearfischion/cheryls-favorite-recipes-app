@@ -1,0 +1,11 @@
+div.instructions {
+}
+div.instructions button {
+    width: 50%;
+    display: block;
+    transform: translateX(100%);
+}
+
+div.instructions ol {
+    visibility: hidden;
+}

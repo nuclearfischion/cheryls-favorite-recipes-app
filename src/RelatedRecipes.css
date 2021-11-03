@@ -1,5 +1,5 @@
-.relatedRecipes {
-
+.relatedRecipes .relatedRecipesBody {
+    display: flex;
 }
 .relatedRecipes .recipeCard img {
     min-height: 60px;
@@ -13,10 +13,10 @@
     margin-bottom: 0;
 }
 .relatedRecipes button {
-    display: none;
+    display: none !important;
 }
 .relatedRecipes ul, .relatedRecipes ol {
-    display: none;
+    display: none !important;
 }
 .relatedRecipesBody .recipeCard {
     flex: 1 1 calc(100% / 4);

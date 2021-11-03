@@ -18,24 +18,33 @@
 }
 
 .recipeCard .recipeBody {
+    position: relative;
     padding: 3rem 2rem;
     text-align: left;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;*/
     width: 50%;
 }
-
-.recipeCard .recipeNav {
+.recipeCard .recipeNav  {
+    width: 100%;
+    position: relative;
     display: flex;
-    justify-content: space-between;
+}
+.recipeCard .recipeNav div {
+    width: 100%;
 }
 
-.recipeCard .recipeNav button {
+.recipeCard .recipeNav div {
+    position: absolute;
+}
+
+.recipeCard button {
     padding: 1em;
     width: 48%;
     background: none;
     border: none;
+    color: rgb(222,227,228);
     border-bottom: 1px solid rgb(222,227,228);
     font-weight: bold;
     font-size: .9rem;

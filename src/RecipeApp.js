@@ -4,17 +4,22 @@ import './RecipeApp.css';
 import './Recipe.css';
 import './Navbar.css';
 import './RecipeList.css';
+import './IngredientsButton.css';
+import './InstructionsButton.css';
 
 import Recipe from './Recipe';
 import RecipeList from './RecipeList';
 import NavBar from './Navbar';
 import RelatedRecipes from './RelatedRecipes';
+import IngredientsButton from './IngredientsButton';
+import InstructionsButton from './InstructionsButton';
 
 class RecipeApp extends Component {
     constructor(props){
         super(props);
         this.state={className: "App"};
     }
+    
     render(){
       let myLogo = "https://images.unsplash.com/photo-1535141192574-5d4897c12636?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80";
       return (

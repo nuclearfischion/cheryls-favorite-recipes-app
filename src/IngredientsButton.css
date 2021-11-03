@@ -1,0 +1,16 @@
+button.active {
+    color: var(--text-light) !important;
+    border-bottom-color: var(--text-light) !important;
+}
+
+
+div.ingredients {
+}
+div.ingredients button {
+    width: 50%;
+    display: block;
+}
+
+.hide {
+    display: none;
+}
