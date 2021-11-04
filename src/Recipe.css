@@ -93,3 +93,7 @@
     padding-left: 0.5em;
     margin-bottom: 1.25em;
 }
+
+.inactive {
+    display: none;
+}

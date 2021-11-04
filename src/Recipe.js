@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import RecipeApp from './RecipeApp';
 import IngredientsButton from './IngredientsButton';
 import InstructionsButton from './InstructionsButton';
 
@@ -15,18 +14,25 @@ class Recipe extends Component{
     };
     state = {
         ingredientsActive: true,
-        instructionsActive: false
+        activateIngredients: ()=>{
+            console.log(`activateIngredients called...`);
+            this.setState({ingredientsActive: true, instructionsActive: false});
+            console.log("recipe state", this.state);
+        },
+        instructionsActive: false,
+        activateInstructions: ()=>{
+            console.log(`activateInstructions called`);
+            this.setState({ingredientsActive: false, instructionsActive: true});
+            console.log("recipe state", this.state);
+        }
     };
+    counter = 0;
     constructor(props){
         super(props);
-        // this.toggleIngredients = this.toggleIngredients.bind(this);
+        this.key = this.counter;
+        this.counter++;
     }
-    toggleInstructions = (e)=>{
-        this.setState({ingredientsActive: !this.state.ingredientsActive});
-        console.log('this is: ', this.state.ingredientsActive);
-    };
     render(){
-        this.toggleInstructions.bind(this);
         const {title} = this.props;
         const ingredients = this.props.ingredients.map((e, i)=>{
             return <li>{e}</li>
@@ -35,7 +41,6 @@ class Recipe extends Component{
             return <li>{e}</li>
         });
         const {src} = this.props;
-
         return (
             <div className="recipeCard">
                 <div class="recipeImgWrapper">
@@ -44,9 +49,11 @@ class Recipe extends Component{
                 <div className="recipeBody">
                     <h3 className="recipeTitle">{title}</h3>
                     <div className="recipeNav">
-                            <IngredientsButton className={this.state.ingredientsActive?"active":"inactive"}/>
-                            <InstructionsButton onClick={this.toggleInstructions}/>
+                            <IngredientsButton className={this.state.ingredientsActive?"active":null} onClick={this.state.activateIngredients}/>
+                            <InstructionsButton className={this.state.instructionsActive?"active": null} onClick={this.state.activateInstructions}/>
                     </div>
+                    <ul class={`ingredients ${this.state.ingredientsActive ? "active" : "hide"}`}>{ingredients}</ul>
+                    <ol className={`instructions ${this.state.instructionsActive ? "active":"hide"}`}>{instructions}</ol>
                 </div>
             </div>
         );
